@@ -17,7 +17,7 @@ function Login(props) {
   const handlesubmit = (e) => {
     e.preventDefault();
     axios({
-      url: "http://localhost:5000/login",
+      url: "https://intense-cove-28580.herokuapp.com/login",
       method: "POST",
       headers: {
         'Access-Control-Allow-Origin': '*'
@@ -58,7 +58,7 @@ function Login(props) {
     e.preventDefault();
     setCpwd();
     axios({
-      url: "http://localhost:5000/register",
+      url: "https://intense-cove-28580.herokuapp.com/register",
       method: "POST",
       headers: {
         'Access-Control-Allow-Origin': '*'

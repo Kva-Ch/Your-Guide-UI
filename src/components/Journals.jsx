@@ -18,7 +18,7 @@ function Journals(props) {
     useEffect(async () => {
       setLoading(true);
       axios({
-        url: "http://localhost:5000/journals",
+        url: "https://intense-cove-28580.herokuapp.com/journals",
         method: "GET",
         headers: {
           'Access-Control-Allow-Origin': '*',

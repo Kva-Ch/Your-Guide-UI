@@ -18,7 +18,7 @@ function Tutorials(props) {
   useEffect(async () => {
     setLoading(true);
     axios({
-      url: "http://localhost:5000/tutorials",
+      url: "https://intense-cove-28580.herokuapp.com/tutorials",
       method: "GET",
       headers: {
         'Access-Control-Allow-Origin': '*',

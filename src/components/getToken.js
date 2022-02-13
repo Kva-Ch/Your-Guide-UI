@@ -3,7 +3,7 @@ import axios from "axios";
 
 async function getToken() {
   try {
-    return axios.get("http://localhost:5000/token");
+    return axios.get("https://intense-cove-28580.herokuapp.com/token");
   } catch (error) {
     console.error(error);
 

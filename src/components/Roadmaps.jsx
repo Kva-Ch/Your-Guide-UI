@@ -18,7 +18,7 @@ function Roadmaps(props) {
     useEffect(async () => {
       setLoading(true);
       axios({
-        url: "http://localhost:5000/roadmaps",
+        url: "https://intense-cove-28580.herokuapp.com/roadmaps",
         method: "GET",
         headers: {
           'Access-Control-Allow-Origin': '*',

@@ -18,7 +18,7 @@ function Ebooks(props) {
     useEffect(async () => {
       setLoading(true);
       axios({
-        url: "http://localhost:5000/ebooks",
+        url: "https://intense-cove-28580.herokuapp.com/ebooks",
         method: "GET",
         headers: {
           'Access-Control-Allow-Origin': '*',

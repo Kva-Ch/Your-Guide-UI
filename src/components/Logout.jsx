@@ -10,7 +10,7 @@ function Logout(props){
   useEffect(async () => {
     console.log("In effect");
     axios({
-      url: "http://localhost:5000/logout",
+      url: "https://intense-cove-28580.herokuapp.com/logout",
       method: "GET",
       headers: {
         'Access-Control-Allow-Origin': '*',

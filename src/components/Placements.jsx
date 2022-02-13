@@ -18,7 +18,7 @@ function Placemnts(props) {
   useEffect(async () => {
     setLoading(true);
     axios({
-      url: "http://localhost:5000/placements",
+      url: "https://intense-cove-28580.herokuapp.com/placements",
       method: "GET",
       headers: {
         'Access-Control-Allow-Origin': '*',
