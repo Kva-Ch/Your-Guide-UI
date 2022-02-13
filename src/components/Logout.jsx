@@ -11,10 +11,13 @@ function Logout(props){
     console.log("In effect");
     axios({
       url: "https://intense-cove-28580.herokuapp.com/logout",
-      method: "GET",
+      method: "POST",
       headers: {
         'Access-Control-Allow-Origin': '*',
         "Authorization": `Bearer ${accessToken}`
+      },
+      data: {
+        "accessToken": accessToken
       }
     }).then((res) => {
       // console.log(res.data.placements);
