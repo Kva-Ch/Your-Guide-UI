@@ -50,7 +50,7 @@ function Placemnts(props) {
               <h1 key={ele.companyname} className="companyName">{ele.companyname}</h1>
             </div>
             <div className=''>
-              <p className="workLocation">{le[" WorkLocation"]}</p>
+              <p className="workLocation">{le["WorkLocation"]}</p>
             </div>
           </a>
 
