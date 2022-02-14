@@ -94,14 +94,15 @@ function Login(props) {
     <div className="col-lg-7"></div>
     <div className="col-lg-5 box2">
       <div className="row">
-        <div className="col-lg-2"></div>
-        <div className="col-lg-3 col-md-12 col-sm-12 changeToPointer">
+        <div className="col-lg-1"></div>
+        <div className="col-lg-4 col-md-12 col-sm-12 changeToPointer">
           <div className='tab-left' onClick={() => setStatus(0)}>Log in</div>
         </div>
-        <div className="col-lg-3"></div>
-        <div className="col-lg-3 col-md-12 col-sm-12 changeToPointer">
+        <div className="col-lg-2"></div>
+        <div className="col-lg-4 col-md-12 col-sm-12 changeToPointer">
           <div className='tab-right' onClick={() => setStatus(1)}>Sign up</div>
         </div>
+        <div className="col-lg-1"></div>
       </div>
       <hr/>
       <div className="form"></div>
