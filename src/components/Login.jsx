@@ -72,6 +72,11 @@ function Login(props) {
       const data = res.data;
       console.log(data);
       if (data.status === 200) {
+        if (data.accessToken) {
+          console.log(data.accessToken);
+          // localStorage.removeItem('accessToken');
+          localStorage.setItem('accessToken', data.accessToken);
+        }
         navigate('/home');
         console.log("Successfully signup");
       } else if(data.status === 409){
