@@ -8,7 +8,7 @@ import {App, token} from "./App";
 function MainHome(props) {
   return (<div>
     <Header/>
-    <Home/>
+    <Home />
     <Footer/>
   </div>);
 }

@@ -11,10 +11,11 @@ function Logout(props){
     console.log("In effect");
     axios({
       url: "https://intense-cove-28580.herokuapp.com/logout",
+      // url: "http://localhost:5000/logout",
       method: "POST",
       headers: {
         'Access-Control-Allow-Origin': '*',
-        "Authorization": `Bearer ${accessToken}`
+        // "Authorization": `Bearer ${accessToken}`
       },
       data: {
         "accessToken": accessToken
@@ -23,6 +24,8 @@ function Logout(props){
       // console.log(res.data.placements);
       // setState(res.data.placements);
       //console.log(data);
+      // console.log("removed");
+      // props.setFlag(1);
       navigate('/');
     }).catch((err) => {
       alert(err);

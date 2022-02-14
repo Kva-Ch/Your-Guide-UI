@@ -10,15 +10,18 @@ function MainLogin(props) {
 
   if (localStorage.getItem('accessToken')) {
     const accessToken = localStorage.getItem('accessToken');
-
+    localStorage.removeItem('accessToken');
+    // console.log(accessToken);
+    // console.log("removed again");
     useEffect(async () => {
-      console.log("In effect");
+      // console.log("In effect");
       axios({
         url: "https://intense-cove-28580.herokuapp.com/logout",
+        // url: "http://localhost:5000/logout",
         method: "POST",
         headers: {
           'Access-Control-Allow-Origin': '*',
-          "Authorization": `Bearer ${accessToken}`
+          // "Authorization": `Bearer ${accessToken}`
         },
         data: {
           "accessToken": accessToken
@@ -28,8 +31,9 @@ function MainLogin(props) {
         // setState(res.data.placements);
         //console.log(data);
         // navigate('/');
-        localStorage.removeItem('accessToken');
+
       }).catch((err) => {
+        // console.log("Error from here");
         alert(err);
         console.log(err);
       });
