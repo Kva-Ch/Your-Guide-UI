@@ -37,7 +37,7 @@ function Roadmaps(props) {
 
     if (state) {
       content = [];
-      console.log(state);
+      // console.log(state);
       state.forEach((ele, i) => {
         ele.roadmaps.forEach((le, j) => {
           // {var value = "#collapseExample"+i.toString()+j.toString()}

@@ -37,7 +37,7 @@ function Tutorials(props) {
 
   if (state) {
     content = [];
-    console.log(state);
+    // console.log(state);
     state.forEach((ele, i) => {
       ele.tutorials.forEach((le, j) => {
         // {var value = "#collapseExample"+i.toString()+j.toString()}

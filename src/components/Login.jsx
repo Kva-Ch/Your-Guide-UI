@@ -37,7 +37,7 @@ function Login(props) {
       // }
       if (data.status === 200) {
         if (data.accessToken) {
-          console.log(data.accessToken);
+          // console.log(data.accessToken);
           // localStorage.removeItem('accessToken');
           localStorage.setItem('accessToken', data.accessToken);
         }
@@ -73,7 +73,7 @@ function Login(props) {
       console.log(data);
       if (data.status === 200) {
         if (data.accessToken) {
-          console.log(data.accessToken);
+          // console.log(data.accessToken);
           // localStorage.removeItem('accessToken');
           localStorage.setItem('accessToken', data.accessToken);
         }

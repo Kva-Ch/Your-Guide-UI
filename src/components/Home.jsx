@@ -11,8 +11,8 @@ import {generatePath, useNavigate} from 'react-router';
 
 function Home(props) {
   const [selectedTab, setSelectedTab] = useState("Placements");
-  console.log("In the home: " + token);
-  console.log(token);
+  // console.log("In the home: " + token);
+  // console.log(token);
 
   function random(value) {
     setSelectedTab(value);
